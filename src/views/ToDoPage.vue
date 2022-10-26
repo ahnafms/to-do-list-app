@@ -66,9 +66,6 @@ export default{
                 querySnapshot.forEach((doc) => {
                     let id = {id : doc.id}
                     this.lists.push({...doc.data(), ...id})
-                    if(doc.data().status == 1) this.count1++
-                    else if(doc.data().status == 2) this.count2++
-                    else if(doc.data().status == 3) this.count3++
                 })
             }
             catch(err){

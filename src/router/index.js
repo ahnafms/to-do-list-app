@@ -32,11 +32,6 @@ const routes = [
         component: () => import('@/views/DetailView.vue')
     },
     {
-        path: '/bukudetail/:id',
-        name:'bukudetail',
-        component: () => import('@/views/BukuDetailView.vue')
-    },
-    {
         path:'/:catchAll(.*)',
         name:'notfound',
         component: () => import('@/views/NotFound.vue')

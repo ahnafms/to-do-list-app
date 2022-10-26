@@ -21,9 +21,6 @@ export default{
             lists:[]
         }
     },
-    mounted(){
-        this.load();
-    },
     methods: {
         async addData(title, desc, status){
             try{
